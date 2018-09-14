@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class ButtonMasher : MonoBehaviour {
 
+    // data for our class
     public AudioSource clickSound; // sound that will play when we click the button 
+    public TextMesh scoreText; // display text for the player score 
+
+    private int score = 0; // this is a numerical data value of our score 
 
 	// Use this for initialization
 	void Start () {
@@ -22,7 +26,12 @@ public class ButtonMasher : MonoBehaviour {
     {
 
         Debug.Log("OnMouseDown Method Called");
-        clickSound.Play(); 
+        clickSound.Play();
+        // increase score by 1 
+        score = score + 1;
+        // this adds 1 to our total score 
+        scoreText.text = score.ToString();
+        // update visual score
 
     } // end of mouse down()
 
