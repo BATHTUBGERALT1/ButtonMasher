@@ -67,6 +67,14 @@ public class ButtonMasher : MonoBehaviour {
 
         } // end of if (game running == true) 
 
+        if (gameRunning == true)
+        {
+
+            gameOverSound.Stop();
+
+
+
+        } // end of if (game running == true) 
     } // End of Update()
 
     // responds to event from unity that the object has been clicked 
@@ -86,7 +94,6 @@ public class ButtonMasher : MonoBehaviour {
             scoreText.text = score.ToString();
             // update visual score
 
-            gameOverSound.Stop();
 
             
 
