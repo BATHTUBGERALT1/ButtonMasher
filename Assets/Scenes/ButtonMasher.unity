@@ -441,9 +441,10 @@ MonoBehaviour:
   clickSound: {fileID: 273243742}
   scoreText: {fileID: 870181272}
   timerText: {fileID: 1908168268}
-  gameLength: 10
+  gameLength: 3
   gameOverSound: {fileID: 2124521283}
   messageText: {fileID: 1729641564}
+  musicSound: {fileID: 1800356856}
 --- !u!212 &1052105378
 SpriteRenderer:
   m_ObjectHideFlags: 0
